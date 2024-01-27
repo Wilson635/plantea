@@ -34,10 +34,10 @@ export default async function Home({ searchParams }: SearchParamProps) {
           </div>
 
           <Image 
-            src="/assets/images/hero.png"
+            src="/assets/images/hello.png"
             alt="hero"
-            width={1000}
-            height={1000}
+            width={1500}
+            height={1500}
             className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh]"
           />
         </div>
@@ -53,9 +53,9 @@ export default async function Home({ searchParams }: SearchParamProps) {
 
         <Collection 
           data={events?.data}
-          emptyTitle="No Events Found"
+          emptyTitle="No Plants Found"
           emptyStateSubtext="Come back later"
-          collectionType="All_Events"
+          collectionType="All_Plants"
           limit={6}
           page={page}
           totalPages={events?.totalPages}

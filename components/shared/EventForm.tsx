@@ -138,7 +138,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
               render={({ field }) => (
                 <FormItem className="w-full">
                   <FormControl className="h-72">
-                    <Textarea placeholder="Description" {...field} className="textarea rounded-2xl" />
+                    <Textarea placeholder="Description" {...field} className="textarea rounded-2xl resize-none" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -322,7 +322,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
           type="submit"
           size="lg"
           disabled={form.formState.isSubmitting}
-          className="button col-span-2 w-full"
+          className="button h-14 bg-gradient-to-r text-white from-[#005b50ff] to-[#60bb45ff] col-span-2 w-full"
         >
           {form.formState.isSubmitting ? (
             'Submitting...'
