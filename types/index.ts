@@ -103,24 +103,24 @@ export type CreateCategoryParams = {
 //   buyerId: string
 // }
 
-// export type CreateOrderParams = {
-//   stripeId: string
-//   eventId: string
-//   buyerId: string
-//   totalAmount: string
-//   createdAt: Date
-// }
+export type CreateOrderParams = {
+  stripeId: string
+  eventId: string
+  buyerId: string
+  totalAmount: string
+  createdAt: Date
+}
 
-// export type GetOrdersByEventParams = {
-//   eventId: string
-//   searchString: string
-// }
+export type GetOrdersByEventParams = {
+  eventId: string
+  searchString: string
+}
 
-// export type GetOrdersByUserParams = {
-//   userId: string | null
-//   limit?: number
-//   page: string | number | null
-// }
+export type GetOrdersByUserParams = {
+  userId: string | null
+  limit?: number
+  page: string | number | null
+}
 
 // ====== URL QUERY PARAMS
 export type UrlQueryParams = {
